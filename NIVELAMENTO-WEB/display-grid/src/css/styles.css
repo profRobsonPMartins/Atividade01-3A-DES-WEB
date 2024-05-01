@@ -1,0 +1,37 @@
+/* Google fontes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Code aqui */
+/* Display grid esta relacionado a *linhas* */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "main aside aside"
+            "footer footer footer"
+    ;
+    grid-template-rows:  50px 78vh 50px;
+}
+.header {
+    border: 2px solid red;
+    grid-area: header;
+}
+.main {
+    border: 2px solid blue;
+    grid-area: main;
+}
+
+.aside {
+    border: 2px solid green;
+    grid-area: aside;
+}
+.footer {
+    border: 2px solid pink;
+    grid-area: footer;
+}
+
